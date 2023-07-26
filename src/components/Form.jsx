@@ -1,11 +1,14 @@
 import React from 'react'
 
 const Form = () => {
+    const submitTodoHandle= (e)=>{
+        e.preventDefault()
+    }
   return (
     <form>
   <div className="search">
     <input type="text" className="todo-input" placeholder="Add a Task" />
-    <button className="todo-button" type="submit">
+    <button className="todo-button" type="submit" onClick={submitTodoHandle}>
       <i className="fas fa-plus-circle" />
     </button>
   </div>

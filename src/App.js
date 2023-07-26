@@ -1,7 +1,11 @@
+import "./App.css"; 
+
 function App() {
   return (
-    <div className="">
-     <h1>HELLOOO</h1>
+    <div className="App">
+     <header>
+      <h1>My ToDo List</h1>
+     </header>
     </div>
   );
 }

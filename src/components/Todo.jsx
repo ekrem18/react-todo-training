@@ -2,13 +2,13 @@ import React from "react";
 
 const Todo = () => {
   return (
-    <div classname="todo">
-      <button classname="complete-btn">
-        <i classname="fas fa-check-circle" />
+    <div className="todo">
+      <button className="complete-btn">
+        <i className="fas fa-check-circle" />
       </button>
-      <li classname="todo-item" />
-      <button classname="trash-btn">
-        <i classname="fa fa-minus-circle" />
+      <li className="todo-item" />
+      <button className="trash-btn">
+        <i className="fa fa-minus-circle" />
       </button>
     </div>
   );

@@ -8,13 +8,18 @@ const Form = ({ inputText, setInputText, todos, setTodos }) => {
 
   const submitTodoHandle = (e) => {
     e.preventDefault();
+    
     setTodos([
       ...todos,
       { text: inputText, 
         completed: false, 
         id: Math.random() },
     ]);
+    setInputText("")
+    
   };
+
+
   return (
     <form>
       <div className="search">

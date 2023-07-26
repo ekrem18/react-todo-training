@@ -15,8 +15,8 @@ const Form = ({ inputText, setInputText, todos, setTodos }) => {
         completed: false, 
         id: Math.random() },
     ]);
-    setInputText("")
     
+    setInputText("")
   };
 
 

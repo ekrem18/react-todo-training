@@ -1,13 +1,19 @@
 import React from 'react'
 
-const Form = () => {
+const Form = ({inputText, setInputText}) => {
+    const inputTextHandle = (e)=>{
+        setInputText(e.target.value)
+        console.log(e.target.value);
+    }
+
     const submitTodoHandle= (e)=>{
         e.preventDefault()
+        console.log(inputText);
     }
   return (
     <form>
   <div className="search">
-    <input type="text" className="todo-input" placeholder="Add a Task" />
+    <input value={inputText} type="text" className="todo-input" placeholder="Add a Task" onChange={inputTextHandle}/>
     <button className="todo-button" type="submit" onClick={submitTodoHandle}>
       <i className="fas fa-plus-circle" />
     </button>
